@@ -6,7 +6,7 @@ Welcome to Kingdom ANIMALIA, a bunch of code that models the animal kingdom usin
 
 1. **The Structure of the Code:**
 
-        The Animal Kingdom is classified into 2 major classes:
+    The Animal Kingdom is classified into 2 major classes:
    - Vertebrates: Animals with backbone
    - Invertebrates: Animals without backbone
 
