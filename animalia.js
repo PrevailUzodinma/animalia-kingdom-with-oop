@@ -25,3 +25,10 @@ isWarmBlooded(){
 }
 
 }
+
+// APPLYING INHERITANCE: Animals with an without backbone are all under Animals
+class Vertebrate extends AnimalKingdom{
+    constructor(name){
+        super(name);
+    }
+}
