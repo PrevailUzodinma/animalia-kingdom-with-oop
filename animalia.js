@@ -8,4 +8,9 @@ constructor(name){
     }
     this.#name =  name;
 }
+
+get animalName(){
+    return this.#name;
+}
+
 }
