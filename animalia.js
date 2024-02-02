@@ -57,21 +57,36 @@ class Anthropoda extends Invertebrate {
   }
 }
 
-class Fish extends Invertebrate {
+class Fish extends Vertebrate {
   constructor(name) {
     super(name);
   }
-}
-
-class Amphibia extends Invertebrate {
-  constructor(name) {
-    super(name);
+   // APPLYING POLYMORPHISM: Fishes are Cold-Blooded Vertebrates, so override the isWarmblooded method
+   isWarmBlooded() {
+    console.log(`${this.animalName} is NOT a "warm-blooded" animal`);
+    return false;
   }
 }
 
-class Reptiles extends Invertebrate {
+class Amphibia extends Vertebrate {
   constructor(name) {
     super(name);
+  }
+   // APPLYING POLYMORPHISM: Amphibians are Cold-Blooded Vertebrates, so override the isWarmblooded method
+     isWarmBlooded() {
+        console.log(`${this.animalName} is NOT a "warm-blooded" animal`);
+        return false;
+      }
+}
+
+class Reptiles extends Vertebrate {
+  constructor(name) {
+    super(name);
+  }
+   // APPLYING POLYMORPHISM: Reptiles are Cold-Blooded Vertebrates, so override the isWarmblooded method
+  isWarmBlooded() {
+    console.log(`${this.animalName} is NOT a "warm-blooded" animal`);
+    return false;
   }
 }
 
