@@ -13,4 +13,15 @@ get animalName(){
     return this.#name;
 }
 
+isColdBlooded(){
+    console.log(`${this.#name} is a "cold-blooded" animal`)
+    return true;
+}
+
+isWarmBlooded(){
+    console.log(`${this.#name} is a "warm-blooded" animal`)
+    return true;
+
+}
+
 }
