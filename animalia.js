@@ -68,3 +68,26 @@ class Reptiles extends Invertebrate{
         super(name);
     }
 }
+
+class Aves extends Vertebrate{
+    constructor(name){
+        super(name);
+    }
+   // APPLYING POLYMORPHISM: Aves are Warm-Blooded Vertebrates  
+    isColdBlooded(){
+        console.log(`${this.name} is NOT a "cold-blooded" animal`)
+        return false;
+    }
+}
+
+class Mammals extends Vertebrate{
+    constructor(name){
+        super(name);
+    }
+    
+    isColdBlooded(){
+        console.log(`${this.name} is NOT a "cold-blooded" animal`)
+        return true;
+    }
+}
+
