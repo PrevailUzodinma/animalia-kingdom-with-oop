@@ -32,3 +32,15 @@ class Vertebrate extends AnimalKingdom{
         super(name);
     }
 }
+
+class Invertebrate extends AnimalKingdom{
+    constructor(name){
+        super(name);
+    }
+    
+// APPLYING POLYMORPHISM: Invertebrates are usually Cold Blooded.
+    isWarmBlooded(){
+        console.log(`${this.name} is NOT a "warm-blooded" animal`)
+        return false;
+    }
+}
